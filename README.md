@@ -22,4 +22,6 @@ Windows环境下
 pip3 install -r requirements.txt
 
 使用方法
+
 python3 port_servicescan.py
+https://github.com/Corgizz/CPortScan/blob/master/img/1.png
