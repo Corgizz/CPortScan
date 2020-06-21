@@ -101,7 +101,7 @@ def thread_main(ip_Scan,ports_list):
 def ip_port_Scan(ip_Scanlist):
     ports_list = []
     for ip_Scan in tqdm(ip_Scanlist,desc='Processing',ncols=70):
-        cmd = 'masscan '+ ip_Scan + ' --ports 3300-4400,80,443 -oJ masscan.json --rate 100'
+        cmd = 'masscan '+ ip_Scan + ' --ports 1-65535 -oJ masscan.json --rate 1000'
         result = subprocess.run(cmd,shell=True,text=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         with open('masscan.json', 'r+') as f:
