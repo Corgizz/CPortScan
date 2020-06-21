@@ -1,0 +1,7 @@
+python-nmap
+tqdm
+json
+time
+xlsxwriter
+queue
+os
